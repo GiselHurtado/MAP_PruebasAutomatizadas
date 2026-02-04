@@ -1,0 +1,119 @@
+f1a:
+  orden_trabajo: "Tebsa2025 - 100"
+  identificacion_permiso: "SIE"
+  vigente_desde: "01/09/2025 10:25 AM"
+  vigente_hasta: "30/09/2025 05:30 PM"
+  lugar_trabajo: "Planta Tebsa "
+  kks_valor: "24max"
+  aks_kks_opcion: "SIST. SUM. ACEITE MANDO - SISTEMA SUM. ACEITE DE MANDO (No usar) - 24MAX11"
+  empresa_ejecuta: "Metales"
+  supervisor_tebsa: "ALBERTO ESCAÑO"
+  responsable_trabajo: "CESAR SIERRA"
+  descripcion_trabajo: "revision de chimeneas - prueba 1"
+  area_clasificada: "Si"
+  tipo_area_clasificada: "Estacion Reductora"
+  area_restringida: "No"
+  requiere_loto: "No"
+  espacio_confinado: "No"
+  trabajo_altura: "Si"
+  trabajo_caliente: "No"
+  trabajo_tension: "No"
+  autoriza_gerencia: "si"
+  motivo: "PARADA UNIDAD"
+
+f7n:
+  tabla_riesgos:
+    "Trabajos en Altura": "Si"
+  temp_extremas: "Si"
+  temp_c: 55
+  presiones: "Si"
+  presion_bar: 95
+  electrico: "Si"
+  volt: 15
+  otros: "Si"
+  otros_cuales: "Mi aclaración de otros"
+
+f8n:
+  tabla_epp:
+    "Casco con barbuquejo": "Si"
+    "Gafas de Seguridad": "Si"
+  traje_quimicos: "Si"
+  nivel_quimicos: "Nivel B"         # aparece si 'traje_quimicos' == "Si"
+  punto_anclaje: "Si"
+  anclaje_tipo: ["Fijo", "Movil"]        # o "Fijo"
+  linea_vida: "Si"
+  linea_vida_tipo: ["Vertical", "Horizontal"]  # o "Vertical"
+  arnes: "Si"
+  argollas: 2
+  otros_conectores: "No"
+  otros: "No"
+
+f9n:
+  # todo Si por defecto; si quieres forzar alguno a No:
+  # tabla:
+  #   "Algún ítem": "No"
+  otros: "No"
+
+# -- F10n: Trabajadores autorizados
+f10n:
+  trabajadores:
+    - "KATE BULA - 123654"
+# -- F10_2 Formulario sin campos 
+# -- F10a.c: Firma (Trabajador autorizado)
+f10ac:
+  etiqueta_firma: "Firma"
+
+# -- F10a: Firma Permiso de Trabajo (1. Responsable activar el plan de emergencia)
+
+
+# -- F10a (1): Responsable activar el plan de emergencia (mismo rol actual)
+f10a_1:
+  nombre: "Sebastian Hurtado"
+  cargo: "Responsable activar el plan de emergencia"
+  etiqueta_firma: "Firma"
+
+# -- F10a (2): SResponsable del Trabajo (mismo rol actual)
+f10a_2:
+  nombre: "Carolina Murillo"
+  cargo: "Responsable del Trabajo"
+  etiqueta_firma: "Firma"
+
+# -- F10a (3): Supervisor de TEBSA (mismo rol actual)
+f10a_3:
+  nombre: "Carla Zapata"
+  cargo: "Supervisor de TEBSA"
+  etiqueta_firma: "Firma"
+
+
+
+# -- Roles/credenciales para cambios de sesión
+roles:
+  operador:
+    email: "operador@tebsa.com"
+    password: "Tebsa2023@"
+  jefe_turno:
+    email: "jefeturno@tebsa.com"
+    password: "Tebsa2023@"
+  gerencia:
+    email: "gerencia@tebsa.com"
+    password: "Tebsa2023@"
+
+# -- Firmas F10a (las dos primeras ya las tienes funcionando)
+f10a_4:
+  nombre: "Estela Dorado"
+  cargo: "Operador"
+  etiqueta_firma: "Firma"
+
+f10a_5:
+  nombre: "Cecilia Gallardo"
+  cargo: "Jefe de turno"
+  etiqueta_firma: "Firma"
+
+# -- F10: Firma Gerencia
+f10_gerencia:
+  autoriza: "Si"
+  etiqueta_firma: "Firma gerente"
+
+# -- TEBSA - F11. Permiso de Trabajo Firmado
+f11:
+  archivo: "C:\\Users\\Gisel H\\proyecto_selenium\\artifacts\\fotoPrueba.png"
